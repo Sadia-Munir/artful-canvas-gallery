@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { supabase } from "@/integrations/supabase/client";
 
-export const ADMIN_EMAIL = "iamsadiamunir@gmail.com";
+export const ADMIN_EMAIL = "iamsadiamunir7788@gmail.com";
 const ADMIN_PATH = "/admin";
 export const ADMIN_AUTH_ERROR_PARAM = "admin_error";
 const ADMIN_REDIRECT_STORAGE_KEY = "haq_admin_redirect";
