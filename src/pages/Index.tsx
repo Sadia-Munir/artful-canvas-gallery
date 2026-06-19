@@ -81,23 +81,34 @@ const Index = () => {
               justifyContent: "center",
               backgroundColor: "#000000",
               pointerEvents: index === currentIndex ? "auto" : "none",
-              overflow: "hidden",
             }}
           >
-            <img
-              src={painting.image}
-              alt={painting.title}
-              draggable={false}
+            <div
               style={{
-                width: "100vw",
-                height: "100vh",
-                objectFit: "cover",
-                objectPosition: "center",
-                display: "block",
-                transform: zoomed && index === currentIndex ? "scale(1.04)" : "scale(1)",
-                transition: "transform 4s ease-in-out, opacity 1.2s ease-in-out",
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
               }}
-            />
+            >
+              <img
+                src={painting.image}
+                alt={painting.title}
+                draggable={false}
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                  display: "block",
+                  transform: zoomed && index === currentIndex ? "scale(1.04)" : "scale(1)",
+                  transition: "transform 4s ease-in-out, opacity 1.2s ease-in-out",
+                }}
+              />
+            </div>
           </div>
         ))}
 
