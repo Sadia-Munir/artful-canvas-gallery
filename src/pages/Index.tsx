@@ -91,7 +91,7 @@ const Index = () => {
               style={{
                 width: "100vw",
                 height: "100vh",
-                objectFit: "cover",
+                objectFit: "contain",
                 objectPosition: "center",
                 display: "block",
                 transform: zoomed && index === currentIndex ? "scale(1.04)" : "scale(1)",
